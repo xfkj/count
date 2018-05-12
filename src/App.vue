@@ -1,6 +1,6 @@
 <template lang="pug">
 section
-  video(src="./assets/night.mp4" :style="{left}" autoplay loop muted)
+  video(src="/night.mp4" :style="{left}" autoplay loop muted)
   .shade
   router-view.animated.fadeIn
 </template>

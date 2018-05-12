@@ -5,7 +5,7 @@ import store from './store'
 import Home from './components/Home'
 import Result from './components/Result'
 import FeiFan from './components/FeiFan'
-import Join from './components/Join/index'
+import Join from './components/Join'
 
 Vue.use(Router)
 

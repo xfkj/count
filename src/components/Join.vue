@@ -5,7 +5,7 @@ section
     li 全国热线:400-009-1108
     li 选考咨询: 17767162695
     li 高考咨询:400-050-9886
-  img.animated.flip(src="./code.jpg")
+  img.animated.flip(src="../assets/code.jpg")
   ul.address.animated.slideInUp(v-if="i>=1")
     li 硅谷校区:富阳区九龙大道富春硅谷园区4号楼
     li 象山校区:西湖区美院南路象山国际1号楼10F
