@@ -39,10 +39,9 @@ img {
 }
 .address {
   position: fixed;
-  width: 100%;
   bottom: 0;
-  padding-top: 8px;
-  padding-left: 8px;
+  width: 100%;
+  padding: 8px;
   background: rgba(0,0,25,.4);
 }
 </style>

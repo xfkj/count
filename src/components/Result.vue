@@ -1,7 +1,7 @@
 <template lang="pug">
 .content
   .header.animated.slideInDown
-    h1: span.has-border {{res.days}}天{{res.hours}}小时{{res.mins}}分{{res.secs}}秒
+    h1: span.btn {{res.days}}天{{res.hours}}小时{{res.mins}}分{{res.secs}}秒
     .subtitle
       small 你离高考
       small 你还可以
@@ -43,10 +43,8 @@ export default
 }
 h1 span {
   margin-bottom: 4px;
-  padding: 0 12px;
   font-size: 20px;
   letter-spacing: 1px;
-  background: rgba(0,0,25,.4);
 }
 .subtitle {
   display: flex;
@@ -63,8 +61,7 @@ li {
 }
 li span{
   padding: 2px 8px;
-  border: solid 1px currentColor;
-  background: rgba(0,0,25,.4);
+  border: solid 1px #e6f7ff;
 }
 li:nth-child(odd) {
   text-align: right;
