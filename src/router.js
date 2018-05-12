@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import store from './store'
 
 import Home from './components/Home'
 import Result from './components/Result'
@@ -32,16 +31,6 @@ const router = new Router({
       component: Join
     },
   ]
-})
-
-router.afterEach((from) => {
-  const maps = {
-    home: 0,
-    result: '-70%',
-    feifan: '-140%',
-    join: '-210%'
-  }
-  store.commit('setBgLeft', maps[from.name])
 })
 
 export default router

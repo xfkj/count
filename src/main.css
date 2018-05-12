@@ -1,6 +1,12 @@
+html, body, .content {
+  height: 100%;
+}
+
 body {
-  height: 100vh;
   background: #000;
+  background-image: url(./assets/bg.gif);
+  background-size: cover;
+  background-position: center;
   overflow-x:hidden;
 }
 
@@ -10,7 +16,7 @@ body {
   padding: 0;
   line-height: 1.5;
   font-weight: 300;
-  color: #fffbe6;
+  color: #e6f7ff;
 }
 
 li {
@@ -23,9 +29,13 @@ a {
 a:active {
   border: none;
   color: #000;
-  background: #fffbe6;
+  background: #e6f7ff;
 }
 
 .has-border {
-  border: solid 1px #fffbe6;
+  border: solid 1px #e6f7ff;
+}
+
+.content {
+  background: rgba(0,0,20,.4);
 }

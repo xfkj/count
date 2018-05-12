@@ -1,5 +1,5 @@
 <template lang="pug">
-section
+.content
   h1.animated.slideInDown(v-if="i>=1") 艺考生,我们的征程是星辰大海...
   .grades.animated.slideInLeft(v-if="i>=2")
     small 你现在是
@@ -9,7 +9,7 @@ section
     span
       input(type="radio" id="2" value="2" v-model="grade")
       label(for="2") 高 二
-    span
+    span(v-show="show3")
       input(type="radio" id="3" value="3" v-model="grade")
       label(for="3") 高 三
   router-link.has-border.animated.slideInRight(:to="'/result/' + grade" v-show="grade") 继 续
@@ -19,6 +19,10 @@ section
 export default
   data: ->
     grade: null
+  computed:
+    show3: ->
+      d = new Date()
+      d.getMonth() < 5
   order:
     end: 2
 </script>
@@ -47,14 +51,13 @@ label {
   text-align: center;
   margin-bottom: 8px;
   font-size: 18px;
-  border: solid 1px #fffbe6;
+  border: solid 1px currentColor;
 }
 input {
   display: none;
 }
 input:checked+label {
-  background: #fffbe6;
-  color: #000;
+  border-style: dashed;
 }
 a {
   position: absolute;

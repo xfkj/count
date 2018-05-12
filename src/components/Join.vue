@@ -1,5 +1,5 @@
 <template lang="pug">
-section
+.content
   h1 即刻加入非凡吧！
   ul.phones
     li 全国热线:400-009-1108

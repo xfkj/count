@@ -1,5 +1,5 @@
 <template lang="pug">
-section
+.content
   .header.animated.slideInDown
     h1: span.has-border {{res.days}}天{{res.hours}}小时{{res.mins}}分{{res.secs}}秒
     .subtitle

@@ -1,7 +1,7 @@
 <template lang="pug">
-section
+.content
   h1.animated.bounceInDown 非凡是怎样炼成的
-  ul.content
+  ul.histories
     li(v-if="i==1").animated.bounceInLeft
       h2 2007，
       p 非凡文化课席卷杭州各大画室!
@@ -61,7 +61,7 @@ h1 {
   text-align: center;
   border: solid 1px currentColor;
 }
-.content {
+.histories {
   position: absolute;
   width: 70%;
   top: 20%;

@@ -1,7 +1,5 @@
 import Vue from 'vue'
-import App from './App'
 import router from './router'
-import store from './store'
 import './main.css'
 
 Vue.config.productionTip = false
@@ -22,7 +20,6 @@ Vue.mixin({
 })
 
 new Vue({
-  store,
   router,
-  render: h => h(App)
+  render: h => h('router-view')
 }).$mount('#app')
