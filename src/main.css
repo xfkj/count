@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  background: #000;
+  overflow-x:hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #fffbe6;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:active {
+  border: none;
+  color: #000;
+  background: #fffbe6;
+}
+
+.has-border {
+  border: solid 1px #fffbe6;
+}
