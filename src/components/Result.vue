@@ -60,7 +60,7 @@ li {
   margin-bottom: 12px;
 }
 li span{
-  padding: 2px 8px;
+  padding: 4px 8px;
   border: solid 1px #e6f7ff;
 }
 li:nth-child(odd) {

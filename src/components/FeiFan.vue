@@ -42,12 +42,13 @@
       h2 2019，
       p 人生无限，我们在路上...
     .continue.animated.bounceInLeft
-      button.btn(@click="i += 1" v-if="i<12") >>
-  router-link.animated.fadeIn(to="/join" v-if="i==12") 继 续
+      button.btn(@click="go") >>
 </template>
 
-<script>
-export default {}
+<script lang="coffee">
+export default
+  methods:
+    go: -> if @i < 12 then @i += 1 else @$router.push '/join'
 </script>
 
 <style lang="css" scoped>
@@ -68,7 +69,7 @@ ul {
   font-size: 18px;
 }
 li {
-  height: 125px;
+  height: 140px;
 }
 
 h2 {
@@ -78,20 +79,11 @@ h2 {
   text-align: center;
 }
 button.btn {
+  padding: 0 25px;
   font-size: 20px;
-  padding: 0 10px;
   transform: all .7s;
 }
 button.btn:active {
-  padding: 2px 20px;
-}
-
-a {
-  position: absolute;
-  left: 16px;
-  bottom: 30%;
-  padding: 2px 18px;
-  font-size: 18px;
-  border: solid 1px currentColor;
+  transform: scale(1.2);
 }
 </style>
