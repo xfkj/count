@@ -8,6 +8,14 @@
   </head>
   <body>
     <div id="app"></div>
-    <audio src="/bg.mp3" autoplay></audio>
+    <audio src="/bg.mp3" autoplay id="audio"></audio>
+    <script>
+      document.body.addEventListener('click', play)
+      document.body.addEventListener('touchstart', play)
+      function play() {
+        var audio = document.getElementById('audio')
+        audio.play()
+      }
+    </script>
   </body>
 </html>

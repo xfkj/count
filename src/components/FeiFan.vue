@@ -41,8 +41,8 @@
     li(v-if="i==12").animated.bounceInLeft
       h2 2019，
       p 人生无限，我们在路上...
-    .continue.animated.bounceInLeft
-      button.btn(@click="go") >>
+  .go.animated.bounceInLeft
+    button.btn(@click="go") 继 续
 </template>
 
 <script lang="coffee">
@@ -68,19 +68,16 @@ ul {
   padding-left: 16px;
   font-size: 18px;
 }
-li {
-  height: 140px;
-}
 
 h2 {
   font-size: 28px;
 }
-.continue {
-  text-align: center;
+.go {
+  position: absolute;
+  left: 16px;
+  bottom: 40%;
 }
 button.btn {
-  padding: 0 25px;
-  font-size: 20px;
   transform: all .7s;
 }
 button.btn:active {
